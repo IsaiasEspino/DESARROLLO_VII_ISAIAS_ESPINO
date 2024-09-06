@@ -2,9 +2,9 @@
 include 'utilidades_texto.php';
 
 $frases = [
-    "Esta es la primera frase.",
-    "Esta es la segunda frase.",
-    "Esta es la tercera frase."
+    "El sol brilla en el cielo.",
+    "Los pájaros cantan en los árboles.",
+    "El río fluye tranquilamente."
 ];
 
 echo '<table border="1">';
@@ -25,3 +25,4 @@ foreach ($frases as $frase) {
 
 echo '</table>';
 ?>
+
