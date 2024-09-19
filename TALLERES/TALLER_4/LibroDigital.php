@@ -19,4 +19,5 @@ class LibroDigital extends Libro {
 // Ejemplo de uso
 $libroDigital = new LibroDigital("1984", "George Orwell", 1949, "PDF", 2.5);
 echo $libroDigital->obtenerInformacion();
+
         
