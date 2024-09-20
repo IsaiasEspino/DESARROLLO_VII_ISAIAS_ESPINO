@@ -36,4 +36,5 @@ imprimirCiudadesOrdenadas($ciudades);
 // Ejemplo de uso: contarCiudadesPorInicial($ciudades, 'S') debería retornar 1 (Singapur)
 // Tu código aquí
 
+
 ?>
