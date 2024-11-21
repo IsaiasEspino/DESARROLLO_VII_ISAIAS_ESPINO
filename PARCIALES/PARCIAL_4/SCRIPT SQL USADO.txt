@@ -1,0 +1,37 @@
+CREATE DATABASE biblioteca_db;
+
+USE biblioteca_db;
+
+CREATE TABLE usuarios (
+  id int NOT NULL AUTO_INCREMENT,
+  email varchar(255) NOT NULL,
+  nombre varchar(255) DEFAULT NULL,
+  google_id varchar(255) NOT NULL,
+  fecha_registro timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  UNIQUE KEY google_id (google_id)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+CREATE TABLE libros_guardados (
+  id int NOT NULL AUTO_INCREMENT,
+  nombre_usuario varchar(255) NOT NULL,
+  google_books_id varchar(255) NOT NULL,
+  titulo varchar(255) NOT NULL,
+  autor varchar(255) DEFAULT NULL,
+  imagen_portada varchar(255) DEFAULT NULL,
+  reseña_personal text,
+  fecha_guardado timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  KEY user_id (nombre_usuario)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+SELECT * FROM usuarios;
+
+SELECT * FROM libros_guardados;
+
+SHOW CREATE TABLE usuarios;
+
+SHOW CREATE TABLE libros_guardados;
+
+SHOW TABLES;
